@@ -9,7 +9,7 @@ app.get("/", function(req, rsp){
 })
 
 app.get("/:team/:season?", function(req, rsp){
-  nhl.team(req.params.team, req.params.season || "20112012", function(players){
+  nhl.team(req.params.team, req.params.season || nhl.currentSeason(), function(players){
     if(players){
       var body = JSON.stringify(players, null, 2) + "\n"
       rsp.send(body, {"Content-Type": "application/json"})
