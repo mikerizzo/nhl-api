@@ -5,6 +5,7 @@
   "dependencies": {
     "jsdom": "0.2.9",
     "express": "2.5.0",
-    "redis": "0.6.7"
+    "redis": "0.6.7",
+    "redis-url": "0.0.1"
   }
 }
