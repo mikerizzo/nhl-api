@@ -14,13 +14,23 @@ json payloads with redis (set to 2 min).
 
 ## API
 
-Grab the team stats...
+Grab the team stats for the current season:
 
     http://localhost:8001/oilers
 
-OR, specify a season...
+Specify a season:
 
-    http://localhost:8001/oilers/20052006
+    http://localhost:8001/senators/20052006
+
+Add playoffs to the URI to retrieve playoff statistics:
+
+	http://localhost:8001/canucks/20102011/playoffs
+
+Asking for a team that doesn't exist, a season that doesn't exist,
+or playoff statistics for a year in which there are none, will
+return a 404:
+
+	http://localhost:8001/mapleleafs/20102011/playoffs
 
 ## License
 
