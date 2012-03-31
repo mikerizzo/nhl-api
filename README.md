@@ -12,6 +12,10 @@ json payloads with redis (set to 2 min).
 
     node server.js
 
+Alternatively, start with foreman:
+
+    foreman start
+
 ## API
 
 Grab the team stats for the current season:
